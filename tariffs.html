@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a75cc27cbe.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	<title>Skyway Airlines | Тарифы</title>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper-center-header">
+			<div class="header__inner">
+				<a class="header__logo-link" href="index.html"><i class="fas fa-paper-plane"></i> Skyway Airlines</a>
+				<div class="menu-toggle hamburger hamburger-squeeze">
+  					<div class="hamburger-box">
+    					<div class="hamburger-inner"></div>
+  					</div>
+				</div>
+				<nav class="menu">
+					<ul class="menu-list">
+						<li><a class="menu-list__item" href="index.html">Главная</a></li>
+						<li><a class="menu-list__item" href="booking.html">Бронирование</a></li>
+						<li><a class="menu-list__item menu-list__item_active" href="tariffs.html">Тарифы</a></li>
+						<li><a class="menu-list__item" href="directions.html">Направления</a></li>
+						<li><a class="menu-list__item" href="news.html">Новости</a></li>
+						<li><a class="menu-list__item" href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="content">
+		<div class="wrapper-center">
+			<div class="tariffs-intro">
+				<h2>Тарифы</h2>
+				<p>Авиакомпания Skyway Airlines предлагает разные тарифы на перелеты по всему миру, из которых Вы сможете подобрать наиболее подходящий Вам вариант. Независимо от цели поездки наших пассажиров ждет превосходное обслуживание в любом классе обслуживания. Ниже вы найдете общие условия для всех типов тарифов нашей авиакомпании.</p>
+			</div>
+			<div class="tariffs-table-wrapper">
+			<table class="tariffs-table">
+				<thead>
+					<tr class="tariffs-table__row">
+						<td>Тарифы</td>
+						<td>Эконом</td>
+						<td>Эконом +</td>
+						<td>Комфорт</td>
+						<td>Бизнес</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="tariffs-table__row">
+						<td>Ручная кладь</td>
+						<td data-label="Эконом">7 кг</td>
+						<td data-label="Эконом +">7 кг</td>
+						<td data-label="Комфорт">10 кг</td>
+						<td data-label="Бизнес">10 кг</td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Регистрируемый багаж</td>
+						<td data-label="Эконом"><i class="fas fa-coins"></i></td>
+						<td data-label="Эконом +">20 кг</td>
+						<td data-label="Комфорт">30 кг</td>
+						<td data-label="Бизнес">40 кг</td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Открытая дата</td>
+						<td data-label="Эконом"><i class="fas fa-times"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-times"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Регистрация в аэропорту</td>
+						<td data-label="Эконом"><i class="fas fa-coins"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-coins"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Питание</td>
+						<td data-label="Эконом"><i class="fas fa-coins"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-check"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Пустое место рядом с Вами</td>
+						<td data-label="Эконом"><i class="fas fa-coins"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-coins"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-coins"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Выбор места</td>
+						<td data-label="Эконом"><i class="fas fa-coins"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-coins"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row"> 
+						<td>Изменение даты или времени поездки</td>
+						<td data-label="Эконом"><i class="fas fa-times"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-coins"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Замена пассажиров</td>
+						<td data-label="Эконом"><i class="fas fa-coins"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-coins"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Отмена</td>
+						<td data-label="Эконом"><i class="fas fa-coins"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-coins"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Доступ в Бизнес зал</td>
+						<td data-label="Эконом"><i class="fas fa-times"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-times"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-times"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Отдельная стойка обслуживания в аэропорту</td>
+						<td data-label="Эконом"><i class="fas fa-times"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-times"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-check"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+					<tr class="tariffs-table__row">
+						<td>Ускорение формальностей</td>
+						<td data-label="Эконом"><i class="fas fa-times"></i></td>
+						<td data-label="Эконом +"><i class="fas fa-times"></i></td>
+						<td data-label="Комфорт"><i class="fas fa-times"></i></td>
+						<td data-label="Бизнес"><i class="fas fa-check"></i></td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="wrapper-center">
+			<div class="footer__inner">
+				<ul class="social">
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			<a class="footer__tel" href="tel:+375291475790"><i class="fas fa-phone-square-alt"></i> +375 29 147-57-90</a>
+			<div class="footer__copy">
+				<p>&copy; 2021, Skyway Airlines Ltd.</p>
+				<p>Все права защищены.</p>
+			</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.numscroller-1.0.js"></script>
+<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/TweenMax.min.js"></script>
+<script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

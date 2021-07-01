@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/a75cc27cbe.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	<title>Skyway Airlines | Бронирование</title>
+</head>
+<body>
+	
+	<header class="header">
+		<div class="wrapper-center-header">
+			<div class="header__inner">
+				<a class="header__logo-link" href="index.html"><i class="fas fa-paper-plane"></i> Skyway Airlines</a>
+				<div class="menu-toggle hamburger hamburger-squeeze">
+  					<div class="hamburger-box">
+    					<div class="hamburger-inner"></div>
+  					</div>
+				</div>
+				<nav class="menu">
+					<ul class="menu-list">
+						<li><a class="menu-list__item" href="index.html">Главная</a></li>
+						<li><a class="menu-list__item  menu-list__item_active" href="booking.html">Бронирование</a></li>
+						<li><a class="menu-list__item" href="tariffs.html">Тарифы</a></li>
+						<li><a class="menu-list__item" href="directions.html">Направления</a></li>
+						<li><a class="menu-list__item" href="news.html">Новости</a></li>
+						<li><a class="menu-list__item" href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="content">
+		<div class="wrapper-center">
+			<ul class="booking-steps">
+				<li class="step step-active">Поиск</li>
+				<li class="step">Выбор</li>
+				<li class="step">Услуги</li>
+				<li class="step">Оплата</li>
+				<li class="step">Подтверждение</li>
+			</ul>
+		<div class="booking-form-wrapper">
+			<h2>Куда вы планируете поехать?</h2>
+			<form class="booking-form">
+				<div class="booking-form__row1">
+					<input class="booking-form__country-from" type="text" name="from" id="from" tabindex="1" placeholder="Откуда">
+					<input class="booking-form__country-to" type="text" name="to" id="to" tabindex="2" placeholder="Куда">
+					<input class="booking-form__depurture" type="text" name="depurture" placeholder="Выберите дату" id="datepicker" tabindex="3">
+				</div>
+				<div class="booking-form__row2">
+					<div class="position-relative">
+					<label class="booking-form__adults"><span>Взрослые от 12 лет</span>
+						<input class="booking-form__adults-input" type="text" name="adults" id="inputNumberAdults" value="0" tabindex="4" readonly="readonly">
+					</label>
+					<span class="booking-form__counter"> 
+						<button tabindex="5" onclick="decreaseInput1();" type="button"><i class="fas fa-minus"></i></button>
+						<button tabindex="6" onclick="increaseInput1();" type="button"><i class="fas fa-plus"></i></button>
+					</span>
+					</div>
+					<div class="position-relative">
+					<label class="booking-form__child"><span>Дети от 2 до 12 лет (с местом)</span>
+						<input class="booking-form__child-input" type="text" name="child" id="inputNumberChild"  readonly="readonly" value="0" tabindex="7">
+						</label>
+						<span class="booking-form__counter">
+							<button tabindex="8" onclick="decreaseInput2();" type="button"><i class="fas fa-minus"></i></button>
+							 <button tabindex="9" onclick="increaseInput2();" type="button"><i class="fas fa-plus"></i></button>
+						</span>
+					
+					</div>
+					<div class="position-relative">
+					<label class="booking-form__infant"><span>До 2 лет (без места)</span>
+						<input tabindex="10" class="booking-form__infant-input" type="text" name="infant" id="inputNumberInfant"  readonly="readonly" value="0">
+						</label>
+						<span class="booking-form__counter">
+							<button tabindex="11" onclick="decreaseInput3();" type="button"><i class="fas fa-minus"></i></button>
+							 <button tabindex="12" onclick="increaseInput3();" type="button"><i class="fas fa-plus"></i></button>
+						</span>
+					
+				</div>
+				</div>
+				<div class="booking-form__row3">
+					<div class="booking-form__tariffs">
+					<div class="tariffs">
+          			<label for="menu">Тарифы</label>
+            				<select id="menu" name="tariffs">
+              					<option value="value1" >Эконом</option>
+              					<option value="value1">Эконом +</option>
+              					<option value="value2">Комфорт</option>
+              					<option value="value3">Бизнес</option>
+           	 				</select>
+          				</div>
+          		</div>
+          			<div class="booking-form__ticket-type">
+            			<div class="one-way-ticket">
+             			 	<input type="radio" name="ticket-type" id="one-way-ticket" value="value-1" tabindex="13" checked="checked">
+              				<label  for="one-way-ticket">В одну сторону
+              				</label>
+            			</div>
+
+            			<div class="round-trip-ticket">
+              				<input type="radio" name="ticket-type" id="round-trip-ticket" value="value-2" tabindex="14">
+              				<label for="round-trip-ticket">Туда и обратно
+              				</label>
+            			</div>
+          			</div>
+          			<div class="booking-form__direct-flight">
+          				<div class="direct-flight">
+              				<input  class="styled" type="checkbox" id="checkbox" name="direct-flight" value="value-3" tabindex="15">
+              				<label  for="checkbox">
+                			Прямой рейс
+              				</label>
+              			</div>
+           			</div>
+          	</div>
+          		<div class="booking-form__row4">
+					<button type="button" class="booking-form__button" name="find" id="find" tabindex="16">Найти</button>
+				</div>
+			</form>
+			</div>	
+		</div>	
+	</main>
+	<footer class="footer">
+		<div class="wrapper-center">
+			<div class="footer__inner">
+				<ul class="social">
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			<a class="footer__tel" href="tel:+375291475790"><i class="fas fa-phone-square-alt"></i> +375 29 147-57-90</a>
+			<div class="footer__copy">
+				<p>&copy; 2021, Skyway Airlines Ltd.</p>
+				<p>Все права защищены.</p>
+			</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/TweenMax.min.js"></script>
+<script src="js/jquery.numscroller-1.0.js"></script>
+<script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

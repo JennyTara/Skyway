@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a75cc27cbe.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	<title>Skyway Airlines |Контакты</title>
+</head>
+<body>
+	<div id="counts"></div>
+	<header class="header">
+		<div class="wrapper-center-header">
+			<div class="header__inner">
+				<a class="header__logo-link" href="index.html"><i class="fas fa-paper-plane"></i> Skyway Airlines</a>
+				<div class="menu-toggle hamburger hamburger-squeeze">
+  					<div class="hamburger-box">
+    					<div class="hamburger-inner"></div>
+  					</div>
+				</div>
+				<nav class="menu">
+					<ul class="menu-list">
+						<li><a class="menu-list__item" href="index.html">Главная</a></li>
+						<li><a class="menu-list__item" href="booking.html">Бронирование</a></li>
+						<li><a class="menu-list__item" href="tariffs.html">Тарифы</a></li>
+						<li><a class="menu-list__item" href="directions.html">Направления</a></li>
+						<li><a class="menu-list__item" href="news.html">Новости</a></li>
+						<li><a class="menu-list__item menu-list__item_active" href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="content">
+		<div class="wrapper-center">
+			<div class="contacts">
+				<div class="main-office-section">
+					<h3>Представительство в Республике Беларусь</h3>
+					<p>
+						<i class="fas fa-map-marker-alt"></i>   Минск, ул. Кирилла Туровского, 18, офис 13
+					</p>
+					<p>
+						<i class="far fa-calendar-alt"></i> Пн-Пт: 09:00-18:00
+					</p>
+					<p> 
+						<a class="main-office-section__tel" href="tel:+375291475790"><i class="fas fa-phone-alt"></i> +375 29 147-57-90</a></p>
+					<p>
+						<a class="main-office-section__mail" href="mailto:skyway-airlines@gmail.com"><i class="fas fa-envelope"></i>  skyway-airlines@gmail.com</a>
+					</p>
+					
+				</div>
+				<div class="map-section">
+					<div class="map-responsive">
+					<iframe class="map-responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2208.364660843902!2d27.652998115753725!3d53.93061048010565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcec2f412a54b%3A0xc7e9827926f7aad5!2z0YPQuy4g0JrQuNGA0LjQu9C70LAg0KLRg9GA0L7QstGB0LrQvtCz0L4gMTgsINCc0LjQvdGB0Lo!5e1!3m2!1sru!2sby!4v1620762404395!5m2!1sru!2sby" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+				<div class="feedback-form-section">
+					<h3>Свяжитесь с нами</h3>
+					<p>Мы ценим ваше мнение. Свои вопросы, пожелания и комментарии Вы можете направить нам, заполнив представленную ниже форму.</p>
+					<form class="feedback-form">
+						<div>
+							<input class="feedback-form__input" type="text" name="name" tabindex="1" placeholder="Ваше имя">
+						</div>
+						<div>
+							<input class="feedback-form__input" type="text" id="email" name="email" tabindex="2" placeholder="Ваш email">
+						</div>	
+						<div>
+							<textarea class="feedback-form__textarea" placeholder="Введите Ваше сообщение" id="textarea" name="textarea" tabindex="3"></textarea>
+						</div>
+						<div>
+							<button type="button" class="feedback-form__button" id="send" name="send" tabindex="4">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer class="footer">
+		<div class="wrapper-center">
+			<div class="footer__inner">
+				<ul class="social">
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			<a class="footer__tel" href="tel:+375291475790"><i class="fas fa-phone-square-alt"></i> +375 29 147-57-90</a>
+			<div class="footer__copy">
+				<p>&copy; 2021, Skyway Airlines Ltd.</p>
+				<p>Все права защищены.</p>
+			</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.numscroller-1.0.js"></script>
+<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/TweenMax.min.js"></script>
+<script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

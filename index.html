@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/a75cc27cbe.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	
+
+	
+<title>Skyway Airlines</title>
+</head>
+<body class="myContainer">
+	<header class="header-index">
+		<div class="wrapper-center-header">
+			<div class="header__inner-index">
+				<div class="header__logo">
+						<h2><i class="fas fa-paper-plane"></i> Skyway Airlines</h2>
+				</div>
+				<div class="menu-toggle hamburger hamburger-squeeze">
+  					<div class="hamburger-box">
+    					<div class="hamburger-inner"></div>
+  					</div>
+				</div>
+				<nav class="menu">
+					<ul class="menu-list">
+						<li><a class="menu-list__item" href="booking.html">Бронирование</a></li>
+						<li><a class="menu-list__item" href="tariffs.html">Тарифы</a></li>
+						<li><a class="menu-list__item" href="directions.html">Направления</a></li>
+						<li><a class="menu-list__item" href="news.html">Новости</a></li>
+						<li><a class="menu-list__item" href="contacts.html">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+	<section class="intro-index">
+		<div class="intro-index__content">
+			<div class="intro-index__heading">
+				<h1>Время летать!</h1>
+			</div>
+			<form class="booking-form-index">
+				<input class="booking-form-index__country-from" type="text" name="from-index" id="from-index" tabindex="1" placeholder="Откуда">
+				<input class="booking-form-index__country-to" type="text" name="to-index" id="to-index" tabindex="2" placeholder="Куда">
+				<input class="booking-form-index__depurture" type="text" name="depurture-index" id="datepicker" tabindex="3" placeholder="Выберите дату">
+
+				<button type="button" class="booking-form__button-index" name="find-index" id="find" tabindex="4">Найти</button>
+			</form>
+		</div>
+	</section>
+	<section class="benefits">
+		<div class="wrapper-center">
+				<h3>Skyway Airlines в цифрах</h3>
+			<div class="list-benefit">
+				<div class="list-benefit__item">
+					<i class="fas fa-globe-americas"></i>
+					<div class="list-benefit__numbers">
+						<span class='numscroller' data-min='1' data-max='10' data-delay='3' data-increment='1'>10</span>
+					</div>
+					<div class="list-benefit__text">
+						лет успешной работы
+					</div>
+				</div>
+				<div class="list-benefit__item">
+					<i class="fas fa-users"></i>
+					<div class="list-benefit__numbers">
+						<span class='numscroller' data-min='1' data-max='10125064' data-delay='3' data-increment='15000'>10125064</span>
+					</div>
+					<div class="list-benefit__text">
+						пассажиров доставлено до места назначения за 2020 год
+					</div>
+				</div>
+				<div class="list-benefit__item">
+					<i class="fas fa-map-signs"></i>
+					<div class="list-benefit__numbers">
+						<span class='numscroller' data-min='1' data-max='36' data-delay='3' data-increment='1'>36</span>
+					</div>
+					<div class="list-benefit__text">
+						направлений
+					</div>
+				</div>
+				<div class="list-benefit__item">
+					<i class="fas fa-map-pin"></i>
+					<div class="list-benefit__numbers">
+						<span class='numscroller' data-min='1' data-max='197' data-delay='3' data-increment='1'>197</span>
+					</div>
+					<div class="list-benefit__text">
+						городов
+					</div>
+				</div>
+				<div class="list-benefit__item">
+					<i class="far fa-star"></i>
+					<div class="list-benefit__numbers">
+						<span class='numscroller' data-min='1' data-max='16' data-delay='3' data-increment='1'>16</span>
+					</div>
+					<div class="list-benefit__text">
+						место в мировом рейтинге
+					</div>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<section class="special-offer">
+		<div class="wrapper-center">
+			<h3>Специальные предложения</h3>
+			<div class="special-offer-inner">
+				
+				<a class="special-offer__item" href="#">
+					<div class="image-recomendation">
+							<div class="image-wrapper">
+								<img src="images/batumi1.jpg" alt="Фото Батуми">
+								<i class="fas fa-percent"></i>
+							</div>
+							
+					</div>
+					<div class="text-recomendation">
+						<div class="text-recomendation__city">
+							<span class="city-from">Минск</span>
+							<span class="city-to">Батуми</span>
+						</div>
+						<div class="text-recomendation__price">
+							от <span class="price-number">283 BYN</span>
+						</div>
+					</div>
+				</a>
+				<a class="special-offer__item" href="#">
+					<div class="image-recomendation">
+							<div class="image-wrapper">
+								<img src="images/st-peterburg1.jpg" alt="Фото Санкт-Петербурга">
+								<i class="fas fa-percent"></i>
+							</div>
+							
+					</div>
+					<div class="text-recomendation">
+						<div class="text-recomendation__city">
+							<span class="city-from">Минск</span>
+							<span class="city-to">Санкт-Петербург</span>
+						</div>
+						<div class="text-recomendation__price">
+							от <span class="price-number">260 BYN</span>
+						</div>
+					</div>
+				</a>
+				<a class="special-offer__item" href="#">
+					<div class="image-recomendation">
+							<div class="image-wrapper">
+								<img src="images/stambul1.jpg" alt="Фото Стамбула">
+								<i class="fas fa-percent"></i>
+							</div>
+							
+					</div>
+					<div class="text-recomendation">
+						<div class="text-recomendation__city">
+							<span class="city-from">Минск</span>
+							<span class="city-to">Стамбул</span>
+						</div>
+						<div class="text-recomendation__price">
+							от <span class="price-number">325 BYN</span>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>		
+	</section>
+	
+	<div class="sky-animation">
+			<img class="cloud1" src="images/cloud9.png" alt="Облако">
+			<img class="cloud2" src="images/cloud4.png" alt="Облако">
+			<img class="cloud3" src="images/cloud4.png" alt="Облако">
+			<img class="cloud4" src="images/cloud2.png" alt="Облако">
+			<img class="cloud5" src="images/cloud3.png" alt="Облако">
+			<img class="cloud6" src="images/cloud8.png" alt="Облако">
+			<img class="cloud7" src="images/cloud6.png" alt="Облако">
+			<img class="cloud8" src="images/cloud7.png" alt="Облако">
+		
+			<div class="sky-animation-inner">
+				<div class="spacer s2"></div>
+				<div class="spacer s0" id="trigger"></div>
+				<div id="target">
+					<div class="plane">
+						<img  id="plane" src="images/paper_plane3.png" alt="Бумажный самолет">
+					</div>
+				</div>
+				<div class="spacer s2"></div>
+		</div>
+	</div>
+	<a href="#" class="index-to-top"><i class="fas fa-arrow-circle-up"></i></a>
+	</main>
+	<footer class="footer-index">
+		<div class="wrapper-center">
+			<div class="footer__inner">
+				<ul class="social">
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-vk"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a class="social__item" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			<a class="footer__tel" href="tel:+375291475790"><i class="fas fa-phone-square-alt"></i> +375 29 147-57-90</a>
+			<div class="footer__copy">
+				<p>&copy; 2021, Skyway Airlines Ltd.</p>
+				<p>Все права защищены.</p>
+			</div>
+			</div>
+		</div>
+	</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/scrollmagic/minified/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/animation.gsap.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/debug.addIndicators.min.js"></script>
+<script src="js/scrollmagic/minified/plugins/TweenMax.min.js"></script>
+<script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="js/jquery.numscroller-1.0.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
+
+
