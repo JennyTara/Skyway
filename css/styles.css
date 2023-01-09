@@ -1251,7 +1251,7 @@ thead .tariffs-table__row:nth-of-type(1){
 }
 .fa-map-marker-alt, 
 .fa-calendar-alt, 
-.fa-phone-alt, 
+.fa-phone, 
 .fa-envelope{
 	color: #f8b13e;
 }
